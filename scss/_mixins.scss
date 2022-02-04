@@ -4,6 +4,13 @@
   }
 }
 
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 @mixin style-btn($height, $bg, $colorText) {
   display: inline-block;
   height: $height;
@@ -15,8 +22,8 @@
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s;
-  &:hover{
-      background-color: $colorText;
-      color: $bg;
+  &:hover {
+    background-color: $colorText;
+    color: $bg;
   }
 }
