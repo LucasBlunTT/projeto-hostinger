@@ -61,7 +61,7 @@
 
   @include responsive(991px) {
     .container {
-      flex-direction: colum;
+      flex-direction: column;
     }
 
     .text {
